@@ -66,7 +66,7 @@
                                <a href="contact.html"class="nav-link text-white">Contact</a>
                            </li>
                            <li class="nav-item">
-                               <a href="search.html"class="nav-link text-white">Search</a>
+                               <a href="login.html"class="nav-link text-white">Search</a>
                            </li>
                        </ul>
                    </nav>
@@ -96,7 +96,7 @@
           <div class="container-fluid">
             <div class="left-content">
               <div class="left-scrollbar">
-                    <div id="side-scrollbar"></div>
+                    <div id="treeview"></div>
               </div>
             </div>
             <div class="right-content">
@@ -154,9 +154,9 @@
                                         </div>
                                         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
                                           <canvas class="chart" id="card-chart3" height="70"></canvas>
-                                        </div>
                                  </div>
                          </div>
+                    </div>
                     </div>
                     <div class="card mt-4">
                             <div class="row text-center">
@@ -190,6 +190,7 @@
                                                              <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                                            </div>
                                                          </div>
+                              </div>
                               </div>
                               <div class="row mt-5">
                                     <div class="col-sm-6 col-lg-3">
@@ -273,173 +274,20 @@
                                             </div>
                                     </div>
                                  </div>
-                                 <div class="container mt-3">
-                                      <h2> Tabs</h2>
-                                        <br>
-
-                                        <ul class="nav nav-tabs">
-                                           <li class="nav-item">
-                                              <a class="nav-link active" data-toggle="tab" href="#html">HTML</a>
-                                           </li>
-                                            <li class="nav-item">
-                                               <a class="nav-link" data-toggle="tab" href="#css">CSS</a>
-                                           </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#javascript">JAVASCRIPT</a>
-                                            </li>
-                                        </ul>
-                                     <div class="tab-content">
-                                        <div id="html" class="container tab-pane fade"><br>
-                                            <h3>HTML</h3>
-                                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <div id="css" class="container tab-pane active"><br>
-                                          <h3>CSS</h3>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                      </div>
-                                      <div id="Javascript" class="container tab-pane fade"><br>
-                                        <h3>JAVASCRIPT</h3>
-                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                     </div>
-                                 </div>
-                                <div class="demo-container mt-5">
-                                  <div id="chart"></div>
-                                </div>
-                               
-                                 <div class="row mt-4">
-                                        <div class="col-sm-6 col-12">
-                                          <div class="card">
-                                            <div class="card card-header text-center bg-dark text-white font-weight-bold"><h4>List Group</h4></div>
-                                            <div class="card-body">
-                                              <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                </div>
-                                                <input type="text" class="form-control"placeholder="user name" name="User Name"requried> 
-                                              </div>
-                                              <div class="input-group mb-3">
-                                                <div class="input-group-append">
-                                                </div>
-                                                <input type="text" class="form-control"placeholder="email"name="Email-ID">
-                                              </div>
-                                              <button class="btn btn-danger">Send</button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="col-sm-6 col-12">
-                                           <div class="card">
-                                             <div class="card card-header text-center bg-dark text-white font-weight-bold"><h4>Input Group</h4></div>
-                                             <div class="card-body">
-                                               <ul class="list-group">
-                                                 <a href="#" class="list-group-item list-group-item"><strong>Name:</strong></a>
-                                                 <a href="#" class="list-group-item active"><strong>Status:</strong></a>
-                                                 <a href="#" class="list-group-item"><strong>City:</strong></a>
-                              
-                                               </ul>
-                                               <button class="btn btn-info">Click</button>
-                                             </div>
-                                           </div>
-                                        </div>
-                                      </div>
-                                      <div class="alert alert-success alert-dismissable float">
-                                        <button type="button"class="close"data-dismiss="alert">&times;</button>
-                                        <strong> Info!</strong>Bootstrap 4 is the newest version of Bootstrap, which is the most popular HTML,
-                                         CSS, and JavaScript framework for developing responsive, mobile-first websites.
-                                      </div>
-                                  
-                                    </div>
-                        
-                                    <div class="long-title"><h3>Weather Indicators</h3></div>
-                                    <div id="gauge-demo">
-                                        <div class="gauge-element" id="temperatureGauge"></div>
-                                        <div class="gauge-element" id="humidityGauge"></div>
-                                        <div class="gauge-element" id="pressureGauge"></div>
-                                        <div  id="selectbox"></div>
-                                    </div>
-                                    <div class="dx-fieldset">
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Date</div>
-                                          <div class="dx-field-value">
-                                              <div id="date"></div>
-                                          </div>
-                                      </div>    
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Time</div>
-                                          <div class="dx-field-value">
-                                              <div id="time"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Date and time</div>
-                                          <div class="dx-field-value">
-                                              <div id="date-time"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Custom format</div>
-                                          <div class="dx-field-value">
-                                              <div id="custom"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Date picker</div>
-                                          <div class="dx-field-value">
-                                              <div id="date-by-picker"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Clear button</div>
-                                          <div class="dx-field-value">
-                                              <div id="clear"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Disabled</div>
-                                          <div class="dx-field-value">
-                                              <div id="disabled"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Disable certain dates</div>
-                                          <div class="dx-field-value">
-                                              <div id="disabledDates"></div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="dx-fieldset">
-                                      <div class="dx-fieldset-header">Event Handling</div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-label">Set Birthday</div>
-                                          <div class="dx-field-value">
-                                              <div id="birthday"></div>
-                                          </div>
-                                      </div>
-                                      <div class="dx-field">
-                                          <div class="dx-field-value">
-                                              Your age is <div id="age"></div>
-                                          </div>
-                                      </div>
-                                  </div>
-                             
-                               <div class="container-fluid mt-5">
-                                        <footer class="app-footer bg-info footer-dark">
-                                       <div class="text-muted">
-                                         <a href="#">MS.Adhikari</a>
-                                         <span>&copy; 2019 creativehubs.</span>
-                                       </div>
-                                       <div class="ml-auto">
-                                         <span>Powered by</span>
-                                         <a href="#">MS</a>
-                                       </div>
-                                     </footer>
-                                
-                              </div>
-                              
-                          </div>
-                          
-                 </div> 
-              
-          </div>
-
-   </body>
-</html>
+                    <div class="container-fluid mt-5">
+                            <footer class="app-footer bg-info footer-dark">
+                           <div class="text-muted">
+                             <a href="#">MS.Adhikari</a>
+                             <span>&copy; 2019 creativehubs.</span>
+                           </div>
+                           <div class="ml-auto">
+                             <span>Powered by</span>
+                             <a href="#">MS</a>
+                           </div>
+                         </footer>
+                    
+                  </div>
+                    </div>
+        
+                </body>
+                </html>

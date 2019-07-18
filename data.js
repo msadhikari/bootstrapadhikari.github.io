@@ -492,3 +492,59 @@ var dataSource=[
 
 
 
+var cities = [{
+    name: 'London',
+    id: '1',
+    data: {
+        temperature: 10,
+        humidity: 81,
+        pressure: 1002.1
+    }
+}, {
+    name: 'Berlin',
+    id: '2',
+    data: {
+        temperature: 14,
+        humidity: 58,
+        pressure: 1008.5
+    }
+}, {
+    name: 'New York',
+    id: '3',
+    data: {
+        temperature: 3,
+        humidity: 89,
+        pressure: 1016.2
+    }
+}, {
+    name: 'Moscow',
+    id: '4',
+    data: {
+        temperature: 2,
+        humidity: 51,
+        pressure: 1016.5
+    }
+}, {
+    name: 'Bangkok',
+    id: '5',
+    data: {
+        temperature: 37,
+        humidity: 39,
+        pressure: 1007.0
+    }
+}];
+
+var federalHolidays = [
+    new Date(2017, 0, 1),
+    new Date(2017, 0, 2),
+    new Date(2017, 0, 16),
+    new Date(2017, 1, 20),
+    new Date(2017, 4, 29),
+    new Date(2017, 6, 4),
+    new Date(2017, 8, 4),
+    new Date(2017, 9, 9),
+    new Date(2017, 10, 11),
+    new Date(2017, 10, 23),
+    new Date(2017, 11, 25)
+];
+
